@@ -1,10 +1,13 @@
-s=input("Enter the string to be converted : ")
+s=input("Enter the string to be ciphered : ")
 k=int(input("Enter the key : "))
 print("The converted cipher text is : ",end="")
 for i in s:
     if i==' ':
         print(" ",end="")
     c=ord(i)
+    if (c>=33 and c<=64) or (c>=91 and c<=96) or c>=123:
+        i=chr(c)
+        print(i,end="")
     if c>=65 and c<=90:
         c=((c-65+k)%26)+65
         i=chr(c)
