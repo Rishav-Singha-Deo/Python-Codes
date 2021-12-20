@@ -1,16 +1,11 @@
 s=input("Enter any string : ")
 print("(a) Total number of characters :",len(s))
-print("(b) The string repeated 5 times :")
-for i in range(1,(5+1)):
-    print("%d. %s"%(i,s))
+print("(b) The string repeated 5 times :\n",s*5)
 print("(c) The first character of the string :",s[0])
 print("(d) The first four characters of the string :",s[0:4])
 print("(e) The last two characters of the string :",s[-2:])
 print("(f) The string in reversed form :",s[::-1])
-if len(s)>=9:
-    print("(g) The ninth character of the string :", s[9-1])
-else:
-    print("(g) The string is too short for a ninth character.")
+print(("(g) The ninth character of the string :", s[9-1]) if len(s)>=9 else "(g) The string is too short for a ninth character.")
 print("(h) The string with its first and last characters removed :",s[1:-1])
 print("(i) The string in all the letters in capital form :",s.upper())
 st1=""
