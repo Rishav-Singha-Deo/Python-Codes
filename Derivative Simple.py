@@ -1,0 +1,5 @@
+s=input("Enter an algebraic expression as (x^n) : ")
+s=s.split("^")
+x,n=s[0],int(s[1])
+d=str(n)+x+"^"+str(n-1)
+print("The derivative of the expression is : ",d)
