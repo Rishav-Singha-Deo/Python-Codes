@@ -2,7 +2,7 @@ s="""Hello. How are you?
 What did you ask? Oh, my name!
 My name is Guido. What is your name?
 Alas! You cannot answer that, can you?"""
-print("The string is :\n",s)
+print("The string is :\n%s"%s)
 p=s.count(".")
 q=s.count("?")
 e=s.count("!")
